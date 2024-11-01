@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="CR-slick-wrapper">
+        <h2 class="CR-slick-wrapper-tittle">Heloo</h2>
+        <div class="CR-slick-slide">
+            <div class="CR-content-slick-slide">
+                <div class="CR-content-slide-full-image">
+                    <img src="images/complete-image.webp" alt="">
+                </div>
+                <div class="CR-content-slide-half-image">
+                    <img src="images/half-image.webp" alt="">
+                </div>
+                <div class="CR-content-slide-content">
+                    <div class="CR-content-inner-grid">
+                        <h3>Brushed French Terry</h3>
+                        <div class="CR-content-slide-description">
+                            <h4>Feels like a hug. Super soft. Flexible stretch. Insulating warmth. </h4>
+                        </div>
+                        <a href="">Shop collection <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="CR-content-slick-slide">
+                <div class="CR-content-slide-full-image">
+                    <img src="images/complete-image2.webp" alt="">
+                </div>
+                <div class="CR-content-slide-half-image">
+                    <img src="images/half-image2.webp" alt="">
+                </div>
+                <div class="CR-content-slide-content">
+                    <div class="content-inner-grid">
+                        <h3>Cooling Cotton</h3>
+                        <div class="CR-content-slide-description">
+                            <h4>Feels like a deep breath. Stretch that moves with you. A soft touch that cools you.</h4>
+                        </div>
+                        <a href="">Shop collection <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="CR-content-slick-slide">
+                <div class="CR-content-slide-full-image">
+                    <img src="images/complete-image3.webp" alt="">
+                </div>
+                <div class="CR-content-slide-half-image">
+                    <img src="images/half-image3.webp" alt="">
+                </div>
+                <div class="CR-content-slide-content">
+                    <div class="CR-content-inner-grid">
+                        <h3>Navigator</h3>
+                        <div class="CR-content-slide-description">
+                            <h4>Feels like a step in the right direction. Eco-minded with a timeless feel and technical
+                                details. </h4>
+                        </div>
+                        <a href="">Shop collection <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.CR-slick-slide').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1.1,
+            slidesToScroll: 0.9,
+            prevArrow: '<button type="button" class="CR-left-button CR-custom-l">←</button>',
+            nextArrow: '<button type="button" class="CR-right-button CR-custom-r" >→</button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 0.8,
+                        infinite: false,
+                        dots: false
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
